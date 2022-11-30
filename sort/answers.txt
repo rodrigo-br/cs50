@@ -1,0 +1,36 @@
+sort1 uses: bubble sort
+
+How do you know?: After discover that the sort2 is the merge sort,
+i compared the sorted files with sort3 knowing that the bubble sort
+has better results and the sort1 was significant faster at this.
+
+sort2 uses: merge sort
+
+How do you know?: Is the fastest one to sort reversed numbers
+
+sort3 uses: selection sort
+
+How do you know?: by exclusion
+
+// Find merge
+./sort1 reversed5000.txt = 0m0.054s
+./sort1 reversed10000.txt = 0m0.199s
+./sort1 reversed50000.txt = 0m5.786s
+
+./sort2 reversed5000.txt = 0m0.011s   !!!
+./sort2 reversed10000.txt = 0m0.007s  !!!
+./sort2 reversed50000.txt = 0m0.017s  !!!
+
+./sort3 reversed5000.txt = 0m0.030s
+./sort3 reversed10000.txt = 0m0.110s
+./sort3 reversed50000.txt = 0m2.639s
+
+
+// Find bubble
+./sort1 sorted5000.txt = 0m0.005s    !!!
+./sort1 sorted10000.txt = 0m0.005s   !!!
+./sort1 sorted50000.txt = 0m0.013s   !!!
+
+./sort3 sorted5000.txt = 0m0.036s
+./sort3 sorted10000.txt = 0m0.108s
+./sort3 sorted50000.txt = 0m2.701s
